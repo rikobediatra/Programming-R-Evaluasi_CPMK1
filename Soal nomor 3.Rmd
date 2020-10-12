@@ -1,0 +1,28 @@
+---
+title: "#CPMK - 19523118 - 19523201 - 19523199"
+output: html_notebook
+---
+```{r}
+
+#3. Matrix
+
+M <- matrix( c( 1,2,3,8,2,9), 3, 2, TRUE)
+M
+
+N <- matrix( c( 5,4,8,2), 2, 2, TRUE)
+N
+
+#a)
+M %*% N
+
+#b)
+M %*% solve(N)
+
+#c)
+M %*% t(N)
+
+#d)
+3 *( (M %*% solve(N)) +( M %*% t(N) ) )
+
+```
+
